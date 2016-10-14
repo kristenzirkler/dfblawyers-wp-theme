@@ -1,0 +1,167 @@
+
+body, p, h3, h4, h5, h6 {
+  font-family: $font-family
+}
+h1, h2 {
+  font-family: $accent-font;
+}
+h2 {
+  font-size: 30px;
+  line-height: 36px;
+  color: $font-color;
+}
+h3 {
+  font-size: 16px;
+  line-height: 18px;
+  color: $font-color;
+}
+/* header */
+#mainMenu > ul > li > a {
+  height: 50px;
+  line-height: 35px;
+}
+.nav-main-menu-responsive {
+  height: 70px;
+  line-height: 70px;
+}
+#header.header-dark-transparent {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom: none;
+}
+// slider
+.hero-caption {
+  font-family: $accent-font;
+}
+.hero-desc {
+
+}
+// page/slider headers
+.color-bars {
+  &:after {
+    background-image: url(/wp-content/uploads/2016/10/color-bars.png);
+    background-size: 100px 10px;
+    width: 100px;
+    height: 10px;
+    content: '';
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+// Buttons
+.button.dfb-button {
+  border: 2px solid $gray;
+  padding: 0;
+  font-size: 14px;
+  span {
+    border: 2px solid $white;
+    line-height: 30px;
+    padding: 0 10px;
+    display: inline-block;
+    background-color: $gray;
+  }
+}
+// Services
+.services-row {
+  .button.dfb-button {
+    margin: 0 0 50px 110px;
+  }
+  .icon-box {
+    margin-bottom: 10px;
+  }
+}
+// Home Map & Contact
+.home-map {
+  .vc_column-inner {
+    padding-top: 0 !important;
+  }
+}
+// Practice Areas
+.testimonial-photo {
+    position: relative;
+    p {
+        position: absolute;
+        left: 0; right: 0;
+        bottom: 0;
+        color: $white;
+        background-color: rgba($black,.4);
+    }
+}
+.page-title {
+  &:after {
+    background-image: url(/wp-content/uploads/2016/10/color-bars.png);
+    background-size: 100px 10px;
+    width: 100px;
+    height: 10px;
+    content: '';
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+.testimonial-photo-huge {
+    background-color: $brand-maroon;
+    .divimage {
+        opacity: .2;
+    }
+    p, li {
+        color: $white;
+    }
+}
+.wpcf7 {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        border: 1px solid $gray-light;
+        padding: 0 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        line-height: 35px;
+    }
+    textarea {
+        //line-height: 
+    }
+    input[type="submit"] {
+        line-height: 35px;
+        padding: 0 20px;
+        font-size: 14px;
+        position: relative;
+        border: 2px solid $white;
+        outline: 2px solid $gray;
+        background: $gray;
+        color: $white;
+        text-transform: uppercase;
+        &:hover {
+            background-color: $brand-green;
+            outline: 2px solid $brand-green;
+        }
+    }
+    label {
+        display: block;
+    }
+}
+
+// Responsive
+@media all and (min-width: 420px) {
+// Tablet & Up
+
+h2 {
+  font-size: 40px;
+  line-height: 44px;
+}
+
+// End Tablet & Up
+}
+
+@media all and (min-width: 800px) {
+// Desktop & Up
+
+
+// End Desktop & Up
+}
+

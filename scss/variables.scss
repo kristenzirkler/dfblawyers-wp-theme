@@ -2,18 +2,26 @@ $body-background: #fff;
 
 $page-background: $body-background;
 
-$main-color: #7dc52f;
+$brand-green: #728a82;
+$brand-yellow: #ccb03a;
+$brand-lime: #d4d464;
+$brand-maroon: #8e7272;
+$brand-peach: #f4dbbd;
 
 $white: #fff;
-$gray-lightest: #f5f4f2;
-$gray-light: #d4d4d2;
-$gray: #8d9095;
+$gray-lightest: #f6f6f6;
+$gray-light: #d4d4d2; // not from template - can be changed
+$gray: #818286;
+$gray-dark: #5e5e5e;
+$gray-darker: #282828;
 $black: #000;
 
-$font-family: Arial, 'Lucida Grande', sans-serif;
-$accent-font: Arial, 'Lucida Grande', sans-serif;
+$main-color: $gray-darker;
 
-$font-color: $black;
+$font-family: 'Mission Gothic Light', Arial, 'Lucida Grande', sans-serif;
+$accent-font: 'Mission Gothic Regular', Arial, 'Lucida Grande', sans-serif;
+
+$font-color: $gray-dark;
 $link: $main-color;
 
 $error: #d92424;
@@ -23,6 +31,28 @@ $page-size: 960px;
 $desktop-side-space: 20px;
 $mobile-side-space: 30px;
 
+
+@font-face {
+    font-family: 'Mission Gothic Regular';
+    src: url('/wp-content/uploads/mission_gothic_regular-webfont.woff2') format('woff2'),
+         url('/wp-content/uploads/mission_gothic_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mission Gothic Light';
+    src: url('/wp-content/uploads/mission_gothic_light-webfont.woff2') format('woff2'),
+         url('/wp-content/uploads/mission_gothic_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mission Gothic Bold';
+    src: url('/wp-content/uploads/mission_gothic_bold-webfont.woff2') format('woff2'),
+         url('/wp-content/uploads/mission_gothic_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 @mixin transition($transitions) {
     -webkit-transition: $transitions;
     -moz-transition: $transitions;
