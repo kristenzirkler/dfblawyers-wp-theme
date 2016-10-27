@@ -31,9 +31,7 @@ h3 {
 // slider
 .hero-caption {
   font-family: $accent-font;
-}
-.hero-desc {
-
+  font-weight: 700;
 }
 // page/slider headers
 .color-bars {
@@ -77,6 +75,16 @@ h3 {
     padding-top: 0 !important;
   }
 }
+// Our Team 
+.image-box.effect.victor {
+  h3, p {
+    padding: 0 20px;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+}
 // Practice Areas
 .testimonial-photo {
     position: relative;
@@ -101,12 +109,16 @@ h3 {
   }
 }
 .testimonial-photo-huge {
-    background-color: $brand-maroon;
+    //background-color: $brand-maroon;
     .divimage {
-        opacity: .2;
+        //opacity: .2;
     }
     p, li {
         color: $white;
+    }
+    p {
+      font-size: 20px;
+      line-height: 30px;
     }
 }
 .wpcf7 {
@@ -145,7 +157,13 @@ h3 {
         display: block;
     }
 }
-
+// Overwriting BS Theme Square Padding
+#main-content .body-square-padding,
+#main-content .vc_row.vc_row-no-padding .body-square-padding {
+  .vc_column-inner {
+    padding: 20px !important;
+  }
+}
 // Responsive
 @media all and (min-width: 420px) {
 // Tablet & Up
@@ -154,6 +172,13 @@ h2 {
   font-size: 40px;
   line-height: 44px;
 }
+// Overwriting BS Theme Square Padding
+#main-content .body-square-padding,
+#main-content .vc_row.vc_row-no-padding .body-square-padding {
+  .vc_column-inner {
+    padding: 40px !important;
+  }
+}
 
 // End Tablet & Up
 }
@@ -161,6 +186,13 @@ h2 {
 @media all and (min-width: 800px) {
 // Desktop & Up
 
+// Overwriting BS Theme Square Padding
+#main-content .body-square-padding,
+#main-content .vc_row.vc_row-no-padding .body-square-padding {
+  .vc_column-inner {
+    padding: 80px !important;
+  }
+}
 
 // End Desktop & Up
 }
