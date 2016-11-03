@@ -42,7 +42,7 @@ if ( isset( $footer_copyright_enable ) && ( true === $footer_copyright_enable ) 
 			$output .= '<ul>';
 			foreach ( $soc_icons as $single_socicon ) {
 				$output .= '<li class="social-' . $single_socicon['social-network-icon'] . '">';
-				$output .= '<a href="' . esc_url( $single_socicon['social-network-url'] ) . '"><i class="fa fa-' . $single_socicon['social-network-icon'] . '"></i></a>';
+				$output .= '<a href="' . esc_url( $single_socicon['social-network-url'] ) . '" target="_blank"><i class="fa fa-' . $single_socicon['social-network-icon'] . '"></i></a>';
 				$output .= '</li>';
 			}
 			$output .= '</ul>';
