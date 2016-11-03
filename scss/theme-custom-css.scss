@@ -60,6 +60,12 @@ h3 {
     background-color: $gray;
   }
 }
+// Our Team 
+.bg-photo-top {
+  .vc_custom_1478103582604 {
+    background-position: top center !important;
+  }
+}
 // Services
 .services-row {
   .button.dfb-button {
@@ -67,6 +73,50 @@ h3 {
   }
   .icon-box {
     margin-bottom: 10px;
+  }
+}
+.services-table-header {
+  font-family: $accent-font;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+.services-table {
+  table,.table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th {
+    border: none;
+    padding: 0;
+  }
+  td {
+    width: 33.33%;
+  }
+  ul {
+    margin: 0; padding: 0;
+  }
+  li {
+    margin: 0; padding: 0 0 16px;
+    list-style-type: none;
+  }
+  li:before {
+    content: '';
+    border-bottom: 4px solid $border-color;
+    display: inline-block;
+    width: 10px;
+    margin-right: 4px;
+  }
+  li:nth-child(1):before {
+    border-bottom-color: $brand-green;
+  }
+  li:nth-child(2):before {
+    border-bottom-color: $brand-yellow;
+  }
+  li:nth-child(3):before {
+    border-bottom-color: $brand-lime;
+  }
+  li:nth-child(4):before {
+    border-bottom-color: $brand-maroon;
+  }
+  li:nth-child(5):before {
+    border-bottom-color: $brand-peach;
   }
 }
 // Home Map & Contact
@@ -89,11 +139,14 @@ h3 {
 .testimonial-photo {
     position: relative;
     p {
-        position: absolute;
-        left: 0; right: 0;
-        bottom: 0;
-        color: $white;
-        background-color: rgba($black,.4);
+      position: absolute;
+      left: 0; right: 0;
+      bottom: 0;
+      color: $white;
+      background-color: rgba($black,.4);
+      padding: 10px;
+      font-size: 18px;
+      margin-bottom: 16px;
     }
 }
 .page-title {
@@ -109,9 +162,9 @@ h3 {
   }
 }
 .testimonial-photo-huge {
-    //background-color: $brand-maroon;
+    background-color: $black;
     .divimage {
-        //opacity: .2;
+        opacity: .8;
     }
     p, li {
         color: $white;
@@ -136,7 +189,7 @@ h3 {
         line-height: 35px;
     }
     textarea {
-        //line-height: 
+        padding: 10px;
     }
     input[type="submit"] {
         line-height: 35px;
@@ -157,6 +210,16 @@ h3 {
         display: block;
     }
 }
+// Our Team Page
+.image-box.effect.victor:hover .image-box-content {
+  a {
+    position: absolute;
+    top: 0; bottom: 0; 
+    left: 0; right: 0;
+    z-index: 2;
+  }
+}
+
 // Overwriting BS Theme Square Padding
 #main-content .body-square-padding,
 #main-content .vc_row.vc_row-no-padding .body-square-padding {
