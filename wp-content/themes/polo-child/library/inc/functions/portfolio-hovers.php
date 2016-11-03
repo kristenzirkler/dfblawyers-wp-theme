@@ -138,7 +138,7 @@ if ( ! ( function_exists( 'portfolio_hover_effects' ) ) ) {
 		} elseif ( 'victor' === $effect_name ) {
 
 			if ( isset( $folio_excerpt ) && ! empty( $folio_excerpt ) ) {
-				$folio_excerpt = wp_trim_words( $folio_excerpt, 3 );
+				$folio_excerpt = wp_trim_words( $folio_excerpt, 10 );
 			}
 
 			$output .= '<div class="image-box effect victor">';
